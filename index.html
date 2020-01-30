@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Victor Fanjul Hevia" />
+	<meta name="keywords" content="Universitat Oberta de Catalunya, Universitat de Barcelona, herramientas para la informatica, bioinformatics, master, genomics," />
+	<meta name="description" content="Web degined by Victor Fanjul for Herramientas para la Informatica, Master de Bioinformatica y Bioestadistica, UOC & UB" />
+	<meta name="robots" content="all" />
+<title>Know your Genes</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+	<div id="header">
+		<div id="topmenu">
+			<div id="title">
+			</div>
+	   	<div id="mainmenu">
+	    	<a href="index.html" id="index" title="Know your Genes"><span>Know your Genes</span></a>
+			</div>
+	    <div id="leftmenu">
+				<a href="https://www.uoc.edu" id="uoc" title="UOC" target="_blank"></a>
+	    	<a href="https://www.ub.edu"  id="ub" title="UB" target="_blank"></a>
+	    </div>
+		</div>
+	</div>
+
+<div id="container">
+	<div id="content">
+		<p>Hi there!</p>
+		<p>Would you like to learn about genes? In this site you can type any gene that belongs to the given species and you will instantly get all the relevant information extracted from the <a href="http://genome.ucsc.edu/" title="UCSC" target="_blank">UCSC Genome Browser</a> and <a href="http://www.geneontology.org/" title="GO" target="_blank">Gene Ontology</a>.</p>
+		<h4>New query</h4>
+		<p>Select genome and input gene symbol:</p>
+		<form action="server.php" method="post" enctype="multipart/form-data">
+			<select name="genome" size="1">
+				<option value="human">Human (Homo sapiens)</option>
+				<option value="mouse">Mouse (Mus musculus)</option>
+				<option value="fish">Zebrafish (Danio rerio)</option>
+				<option value="fly">Fruit fly (Drosophila melanogaster)</option>
+			</select>
+			<input type="text" name="gene" value="LMNA">
+			<input type="submit" name="submit" value="Submit query">
+		</form>
+		<br />
+        <blockquote>This site was created by <span class="name">V&iacute;ctor Fanjul Hevia</span> (Dec 2018) for Herramientas para la Bionform&aacute;tica, Master Universitario en Bioinform&aacute;tica y Bioestad&iacute;stica, <a href="https://www.uoc.edu" title="UOC" target="_blank">Universitat Oberta de Catalunya</a> & <a href="https://www.ub.edu/" title="UB" target="_blank">Universitat de Barcelona</a>.</blockquote>
+		</div>
+        <div id="footer">
+			<p><a href="http://validator.w3.org/check?uri=referer" target="_blank" title="XHTML Validation">XHTML</a> | <a href="mailto:vfanjul@uoc.edu?Subject=Error%20Web%Genes" title="Problems?">Problems with the web?</a></p>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>
